@@ -7,17 +7,21 @@ let cartSummaryHtml = '';
 cart.forEach((cartitem) => {
     const productId = cartitem.productId;
 
-    let matching;
+  let matching;
+  
 
     products.forEach((product) => {
         if (productId === product.id) {
             matching = product;
-        }
+      } 
     });
+  console.log(matching);
+  
+  
     
-    cartSummaryHtml +=
-        `
-       <div class="cart-item-container js-remove-cart-${matching.id}">
+    cartSummaryHtml += `
+       <div class="cart-item-container
+       js-remove-cart-${matching.id}">
             <div class="delivery-date">
               Delivery date: Tuesday, June 21
             </div>
@@ -31,16 +35,20 @@ cart.forEach((cartitem) => {
                  ${matching.name}
                 </div>
                 <div class="product-price">
-                 ${(matching.priceCents)/100}
+                 ${matching.priceCents / 100}
                 </div>
                 <div class="product-quantity">
                   <span>
-                    Quantity: <span class="quantity-label">${cartitem.Qunatity}</span>
+                    Quantity: <span class="quantity-label">${
+                      cartitem.Qunatity
+                    }</span>
                   </span>
                   <span class="update-quantity-link link-primary">
                     Update
                   </span>
-                  <span class="delete-quantity-link link-primary js-delete" data-product-id="${matching.id}">
+                  <span class="delete-quantity-link link-primary js-delete" data-product-id="${
+                    matching.id
+                  }">
                     Delete
                   </span>
                 </div>
