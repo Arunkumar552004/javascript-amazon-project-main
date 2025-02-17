@@ -87,6 +87,14 @@
   margin-bottom: 20px;
 }
 
+.product-quantity-container{
+    display: flex;
+    align-items: center;
+    vertical-align: auto;
+    gap: 10px;
+    font-size: 18px;
+}
+
 .product-image {
   /* Images will overflow their container by default. To
     prevent this, we set max-width and max-height to 100%
@@ -128,6 +136,8 @@
 .product-container:hover{
   transform: translateY(-5px);
 }
+
+
 .product-spacer {
   flex: 1;
 }

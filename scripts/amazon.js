@@ -29,6 +29,19 @@ products.forEach((product) => {
       </div>
 
       <div class="product-quantity-container">
+
+  <div class="sizecontainer">
+      <select>
+      <option selected value="S">S</option>
+      <option value="XS">XS</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+
+      </select>
+
+      </div>
+
         <select>
           <option selected value="1">1</option>
           <option value="2">2</option>
