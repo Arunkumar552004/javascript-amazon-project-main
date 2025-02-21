@@ -12,6 +12,7 @@
      without needing a container. */
   margin-left: auto;
   margin-right: auto;
+  background-color: aqua;
 }
 
 .page-title {
@@ -30,6 +31,10 @@
   /* Use align-items: start; to prevent the elements
      in the grid from stretching vertically. */
   align-items: start;
+}
+
+.checkout-grid:hover{
+  transform: translate(-5);
 }
 
 @media (max-width: 1000px) {
